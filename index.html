@@ -5,16 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.ac8c9fa14d7277d96e4d.css" />
-    <title>Onpoint Task</title>
+    <link rel="stylesheet" href="style.8a901e06ab0dff82fd2e.css" />
+    <title>Onpoint test</title>
 </head>
 
 <body>
     <main class="container">
+
         <nav class="navbar__right">
             <a href="#introduction">
                 <div class="circle circle_orange"></div>
@@ -26,12 +25,12 @@
                 <div class="circle circle_orange"></div>
             </a>
         </nav>
+
         <nav class="navbar">
             <div class="navbar_opened hidden">
                 <div class="circle circle_white circle-bg">
                     <i class="fas fa-video-slash icon"></i>
                 </div>
-                <!-- из-за наложения стилей navbar (z-index), с классами hidden/visible (block) .flex_col столбец не выстраивает, самое простое через br , чтобы ещё не нагромождать стилей-->
                 <br />
                 <div class="circle circle_white circle-bg">
                     <i class="fas fa-times icon"></i>
@@ -50,6 +49,7 @@
                 <span id="timer"></span>
             </div>
         </nav>
+
         <section class="section" id="introduction">
             <h1 class="heading heading__intro heading_blue">
                 Всегда ли цели терапии СД2 на поверхности?
@@ -73,9 +73,8 @@
                 <span class="pulse pulse_risks marger-vbg"></span>
             </div>
         </section>
+
         <section class="section" id="details_heading">
-            <!-- Картинки доп-кусков льда добавила как блоки-картинки.(Первый вариант)
-        В следущей секции они вшиты в css фон. (Второй вариант) -->
             <div class="ices-row">
                 <img src="./images/bgrImg3.png" alt="ice piece" height="30" class="ice-piece__row" />
                 <img src="./images/bgrImg1.png" alt="ice piece" />
@@ -88,416 +87,413 @@
                 <img src="./images/bgrImg4.png" alt="ice piece" height="70" class="ice-piece-sm__row" />
             </div>
         </section>
+
         <section class="section" id="details">
-            <!-- В этой секции картинки вшиты в css фон. (Второй вариант) -->
-            <output>
-                <div id="year1998" class="hidden">
-                    <h2 class="heading_sub heading__details_sub heading_white">
-                        Звенья патогенеза СД2
-                    </h2>
-                    <div class="chart">
-                        <div class="flex flex_row marger-bg__top chart-row_1">
-                            <div class="flex flex_col align-center">
-                                <h5 class="chart-el_heading chart-el_heading_h5">
-                                    1
-                                </h5>
-                                <h6 class="chart-el_details chart-el_details_h6 marger-sm__bt ">
-                                    &beta;-клетки
-                                </h6>
-                                <div class="img_circle img_circle_less marger-vsm__left marger-sm__bt" style="
+
+            <div id="year1998" class="hidden">
+                <h2 class="heading_sub heading__details_sub heading_white">
+                    Звенья патогенеза СД2
+                </h2>
+                <div class="chart">
+                    <div class="flex flex_row marger-bg__top chart-row_1">
+                        <div class="flex flex_col align-center">
+                            <h5 class="chart-el_heading chart-el_heading_h5">
+                                1
+                            </h5>
+                            <h6 class="chart-el_details chart-el_details_h6 marger-sm__bt ">
+                                &beta;-клетки
+                            </h6>
+                            <div class="img_circle img_circle_less marger-vsm__left marger-sm__bt" style="
                     margin-left: 149px;">
-                                    <h5 class="chart-el_heading beta_sm">
-                                        &beta;
-                                    </h5>
-                                </div>
-                                <div class="flex flex-row">
-                                    <div class="box_arrow marger-bg">&#8601;</div>
-                                    <div class="box_arrow marger-bg">&#8595;</div>
-                                    <div class="box_arrow marger-bg">&#8600;</div>
+                                <h5 class="chart-el_heading beta_sm">
+                                    &beta;
+                                </h5>
+                            </div>
+                            <div class="flex flex-row">
+                                <div class="box_arrow marger-bg">&#8601;</div>
+                                <div class="box_arrow marger-bg">&#8595;</div>
+                                <div class="box_arrow marger-bg">&#8600;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex_row chart-row_2">
+                        <div class="flex flex_col">
+                            <div class="flex flex_col align-center marger-sm marger-bg__top ">
+                                <h5 class="chart-el_heading chart-el_heading_h5">
+                                    2
+                                </h5>
+                                <h6 class="chart-el_details chart-el_details_h6 marger-sm__bt">
+                                    Мышцы
+                                </h6>
+                                <div class="flex flex_row">
+                                    <div class="img_circle img_circle_5"></div>
+                                    <div class="box_arrow marger-sm__left ">&#8594;</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex_row chart-row_2">
-                            <div class="flex flex_col">
-                                <div class="flex flex_col align-center marger-sm marger-bg__top ">
-                                    <h5 class="chart-el_heading chart-el_heading_h5">
-                                        2
-                                    </h5>
-                                    <h6 class="chart-el_details chart-el_details_h6 marger-sm__bt">
-                                        Мышцы
-                                    </h6>
-                                    <div class="flex flex_row">
-                                        <div class="img_circle img_circle_5"></div>
-                                        <div class="box_arrow marger-sm__left ">&#8594;</div>
-                                    </div>
+                        <div class="box_hypocl__center flex flex_col marger-bg__top ">
+                            <span class="marger-sm__top">&nbsp;</span>
+                            Гипергликемия
+                        </div>
+                        <div class="flex flex_col ">
+                            <div class="flex flex_col align-center marger-sm__right marger-bg__top ">
+                                <h5 class="chart-el_heading chart-el_heading_h5">
+                                    3
+                                </h5>
+                                <h6 class="chart-el_details chart-el_details_h6 marger-sm__bt">
+                                    Печень
+                                </h6>
+                                <div class="flex flex_row">
+                                    <div class="box_arrow ">&#8592;</div>
+                                    <div class="marger-sm__left  img_circle img_circle_6"></div>
                                 </div>
                             </div>
-                            <div class="box_hypocl__center flex flex_col marger-bg__top ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="year2009" class="hidden">
+                <h2 class="heading_sub heading__details_sub heading_white">
+                    Смертельный октет
+                </h2>
+                <span class="spacer">&nbsp;</span>
+                <div class="chart">
+                    <div class="flex flex_col">
+                        <div class="flex flex_row marger-vvbg">
+                            <div class="  flex flex_col marger-sm__right">
+                                <span class="spacer">&nbsp;</span>
+                                <div class="flex flex_row">
+                                    <h6 class="chart-el_details chart-el_details_h6 align-right">
+                                        Инкретиновый&nbsp;<br />эффект&nbsp;
+                                    </h6>
+                                    <div class="img_circle img_circle_less">
+                                        <h5 class="chart-el_heading beta_sm">
+                                            2
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="box_arrow box_arrow__2 ">&#8595;</div>
+                            </div>
+                            <div class="  flex flex_col marger-vbg">
+                                <div class="flex flex_col align-center marger-top">
+                                    <h5 class="chart-el_heading chart-el_heading_h5">
+                                        1
+                                    </h5>
+                                    <h6 class="chart-el_details chart-el_details_h6">
+                                        &beta;-клетки
+                                    </h6>
+                                    <div class="img_circle img_circle_less marger-vsm__left">
+                                        <h5 class="chart-el_heading beta_sm">
+                                            &beta;
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="box_arrow marger-sm__left">&#8595;</div>
+                            </div>
+                            <div class="  flex flex_col marger-bg">
+                                <span class="spacer">&nbsp;</span>
+                                <div class="flex flex_row">
+                                    <div class="img_circle img_circle_less">
+                                        <h5 class="chart-el_heading beta_sm">
+                                            3
+                                        </h5>
+                                    </div>
+                                    <h6 class="chart-el_details chart-el_details_h6">
+                                        &nbsp; Дефект <br />
+                                        &nbsp;&alpha;-клеток
+                                    </h6>
+                                </div>
+                                <div class="box_arrow marger-sm">&#8595;</div>
+                            </div>
+                        </div>
+                        <div class="flex flex_row">
+                            <div class="  marger-bg__top">
+                                <div class="flex flex_row el_11">
+                                    <span class="marger-sm"></span>
+                                    <div class="flex flex_col align-right">
+                                        <h5 class="chart-el_heading chart-el_heading_h5">
+                                            8
+                                        </h5>
+                                        <h6 class="chart-el_details chart-el_details_h6">
+                                            Почки &nbsp;
+                                        </h6>
+                                    </div>
+                                    <div class="img_circle img_circle_11"></div>
+                                    <div class="box_arrow">&#8594;</div>
+                                </div>
+                            </div>
+                            <div class="box_hypocl__center flex flex_col">
                                 <span class="marger-sm__top">&nbsp;</span>
                                 Гипергликемия
                             </div>
-                            <div class="flex flex_col ">
-                                <div class="flex flex_col align-center marger-sm__right marger-bg__top ">
+                            <div class="   marger-bg__top">
+                                <div class="flex flex_row el_4 marger-sm__bt">
+                                    <div class="img_circle img_circle_4"></div>
+                                    <div class="flex flex_col">
+                                        <h5 class="chart-el_heading chart-el_heading_h5">
+                                            4
+                                        </h5>
+                                        <h6 class="chart-el_details chart-el_details_h6">
+                                            &nbsp; Жировые<br />&nbsp; клетки
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex_row marger-vvbg">
+                            <div class="  flex flex_col">
+                                <div class="flex flex_col align-center marger-vbg">
+                                    <div class="box_arrow">&#8593;</div>
+                                    <div class="img_circle img_circle_7 marger-bg"></div>
                                     <h5 class="chart-el_heading chart-el_heading_h5">
-                                        3
+                                        7
                                     </h5>
-                                    <h6 class="chart-el_details chart-el_details_h6 marger-sm__bt">
+                                    <h6 class="chart-el_details chart-el_details_h6">
+                                        &nbsp; Головной мозг
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="  flex flex_col ">
+                                <div class="flex flex_col align-center marger-sm__right">
+                                    <div class="box_arrow">&#8593;</div>
+                                    <div class="img_circle img_circle_6"></div>
+                                    <h5 class="chart-el_heading chart-el_heading_h5">
+                                        6
+                                    </h5>
+                                    <h6 class="chart-el_details chart-el_details_h6">
                                         Печень
                                     </h6>
-                                    <div class="flex flex_row">
-                                        <div class="box_arrow ">&#8592;</div>
-                                        <div class="marger-sm__left  img_circle img_circle_6"></div>
-                                    </div>
+                                </div>
+                            </div>
+                            <div class="  flex flex_col">
+                                <div class="flex flex_col align-center marger-vvbg">
+                                    <div class="box_arrow">&#8593;</div>
+                                    <div class="img_circle img_circle_5"></div>
+                                    <h5 class="chart-el_heading chart-el_heading_h5">
+                                        5
+                                    </h5>
+                                    <h6 class="chart-el_details chart-el_details_h6">
+                                        Мышцы
+                                    </h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="year2009" class="hidden">
-                    <h2 class="heading_sub heading__details_sub heading_white">
-                        Смертельный октет
-                    </h2>
-                    <span class="spacer">&nbsp;</span>
-                    <div class="chart">
-                        <div class="flex flex_col">
-                            <div class="flex flex_row marger-vvbg">
-                                <div class="  flex flex_col marger-sm__right">
-                                    <span class="spacer">&nbsp;</span>
-                                    <div class="flex flex_row">
-                                        <h6 class="chart-el_details chart-el_details_h6 align-right">
-                                            Инкретиновый&nbsp;<br />эффект&nbsp;
-                                        </h6>
-                                        <div class="img_circle img_circle_less">
-                                            <h5 class="chart-el_heading beta_sm">
-                                                2
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="box_arrow box_arrow__2 ">&#8595;</div>
-                                </div>
-                                <div class="  flex flex_col marger-vbg">
-                                    <div class="flex flex_col align-center marger-top">
-                                        <h5 class="chart-el_heading chart-el_heading_h5">
-                                            1
-                                        </h5>
-                                        <h6 class="chart-el_details chart-el_details_h6">
-                                            &beta;-клетки
-                                        </h6>
-                                        <div class="img_circle img_circle_less marger-vsm__left">
-                                            <h5 class="chart-el_heading beta_sm">
-                                                &beta;
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="box_arrow marger-sm__left">&#8595;</div>
-                                </div>
-                                <div class="  flex flex_col marger-bg">
-                                    <span class="spacer">&nbsp;</span>
-                                    <div class="flex flex_row">
-                                        <div class="img_circle img_circle_less">
-                                            <h5 class="chart-el_heading beta_sm">
-                                                3
-                                            </h5>
-                                        </div>
-                                        <h6 class="chart-el_details chart-el_details_h6">
-                                            &nbsp; Дефект <br />
-                                            &nbsp;&alpha;-клеток
-                                        </h6>
-                                    </div>
-                                    <div class="box_arrow marger-sm">&#8595;</div>
-                                </div>
-                            </div>
+            </div>
+            <div id="year2016" class="hidden visible">
+                <h2 class="heading_sub heading__details_sub heading_white">
+                    Звенья патогенеза СД2
+                </h2>
+                <div class="chart">
+                    <ul>
+                        <li>
                             <div class="flex flex_row">
-                                <div class="  marger-bg__top">
-                                    <div class="flex flex_row el_11">
-                                        <span class="marger-sm"></span>
-                                        <div class="flex flex_col align-right">
-                                            <h5 class="chart-el_heading chart-el_heading_h5">
-                                                8
-                                            </h5>
-                                            <h6 class="chart-el_details chart-el_details_h6">
-                                                Почки &nbsp;
-                                            </h6>
-                                        </div>
-                                        <div class="img_circle img_circle_11"></div>
-                                        <div class="box_arrow">&#8594;</div>
-                                    </div>
-                                </div>
-                                <div class="box_hypocl__center flex flex_col">
-                                    <span class="marger-sm__top">&nbsp;</span>
-                                    Гипергликемия
-                                </div>
-                                <div class="   marger-bg__top">
-                                    <div class="flex flex_row el_4 marger-sm__bt">
-                                        <div class="img_circle img_circle_4"></div>
-                                        <div class="flex flex_col">
-                                            <h5 class="chart-el_heading chart-el_heading_h5">
-                                                4
-                                            </h5>
-                                            <h6 class="chart-el_details chart-el_details_h6">
-                                                &nbsp; Жировые<br />&nbsp; клетки
-                                            </h6>
+                                <span class="marger-vvbg"></span>
+                                <span class="marger-bg"></span>
+                                <span class="marger-bg"></span>
+                                <h4 class="chart-el_heading">1</h4>
+                                <h5 class="chart-el_details">β-клетки</h5>
+                            </div>
+                            <ul>
+                                <li class="chart_col">
+                                    <div class="flex flex_col">
+                                        <div class="flex flex_row el_8 marger-sm__bt">
+                                            <div class="flex flex_col align-right">
+                                                <h5 class="chart-el_heading chart-el_heading_h5">
+                                                    8
+                                                </h5>
+                                                <h6 class="chart-el_details chart-el_details_h6">
+                                                    Микрофлора <br />кишечника
+                                                </h6>
+                                            </div>
+                                            <div class="img_circle img_circle_8"></div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="flex flex_row marger-vvbg">
-                                <div class="  flex flex_col">
-                                    <div class="flex flex_col align-center marger-vbg">
-                                        <div class="box_arrow">&#8593;</div>
-                                        <div class="img_circle img_circle_7 marger-bg"></div>
-                                        <h5 class="chart-el_heading chart-el_heading_h5">
-                                            7
-                                        </h5>
-                                        <h6 class="chart-el_details chart-el_details_h6">
-                                            &nbsp; Головной мозг
-                                        </h6>
+                                    <div class="flex flex_col ">
+                                        <div class="flex flex_row el_9 marger-sm__bt">
+                                            <div class="flex flex_col align-right">
+                                                <h5 class="chart-el_heading chart-el_heading_h5">
+                                                    9
+                                                </h5>
+                                                <h6 class="chart-el_details chart-el_details_h6">
+                                                    Нарушение иммунной <br />регуляции/воспаление
+                                                </h6>
+                                            </div>
+                                            <div class="img_circle img_circle_9"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="  flex flex_col ">
-                                    <div class="flex flex_col align-center marger-sm__right">
-                                        <div class="box_arrow">&#8593;</div>
-                                        <div class="img_circle img_circle_6"></div>
-                                        <h5 class="chart-el_heading chart-el_heading_h5">
-                                            6
-                                        </h5>
-                                        <h6 class="chart-el_details chart-el_details_h6">
-                                            Печень
-                                        </h6>
+                                    <div class="flex flex_col">
+                                        <div class="flex flex_row">
+                                            <div class="flex flex_col">
+                                                <h6 class="chart-el_details chart-el_details_sm chart-el_details__left">
+                                                    &#8595; амилин &#8594;
+                                                </h6>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="  flex flex_col">
-                                    <div class="flex flex_col align-center marger-vvbg">
-                                        <div class="box_arrow">&#8593;</div>
-                                        <div class="img_circle img_circle_5"></div>
-                                        <h5 class="chart-el_heading chart-el_heading_h5">
-                                            5
-                                        </h5>
-                                        <h6 class="chart-el_details chart-el_details_h6">
-                                            Мышцы
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="year2016" class="hidden visible">
-                    <h2 class="heading_sub heading__details_sub heading_white">
-                        Звенья патогенеза СД2
-                    </h2>
-                    <div class="chart">
-                        <ul>
-                            <li>
-                                <div class="flex flex_row">
-                                    <span class="marger-vvbg"></span>
-                                    <span class="marger-bg"></span>
-                                    <span class="marger-bg"></span>
-                                    <h4 class="chart-el_heading">1</h4>
-                                    <h5 class="chart-el_details">β-клетки</h5>
-                                </div>
-                                <ul>
-                                    <li class="chart_col">
-                                        <div class="flex flex_col">
-                                            <div class="flex flex_row el_8 marger-sm__bt">
+                                    <ul>
+                                        <li class="chart_col">
+                                            <div class="flex flex_row el_10">
                                                 <div class="flex flex_col align-right">
                                                     <h5 class="chart-el_heading chart-el_heading_h5">
-                                                        8
+                                                        10
                                                     </h5>
                                                     <h6 class="chart-el_details chart-el_details_h6">
-                                                        Микрофлора <br />кишечника
+                                                        Желудок
                                                     </h6>
                                                 </div>
-                                                <div class="img_circle img_circle_8"></div>
+                                                <div class="img_circle img_circle_10"></div>
+                                                <span class="chart-el_details">&#8594;</span>
                                             </div>
-                                        </div>
-                                        <div class="flex flex_col ">
-                                            <div class="flex flex_row el_9 marger-sm__bt">
-                                                <div class="flex flex_col align-right">
-                                                    <h5 class="chart-el_heading chart-el_heading_h5">
-                                                        9
-                                                    </h5>
-                                                    <h6 class="chart-el_details chart-el_details_h6">
-                                                        Нарушение иммунной <br />регуляции/воспаление
-                                                    </h6>
-                                                </div>
-                                                <div class="img_circle img_circle_9"></div>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex_col">
-                                            <div class="flex flex_row">
-                                                <div class="flex flex_col">
-                                                    <h6
-                                                        class="chart-el_details chart-el_details_sm chart-el_details__left">
-                                                        &#8595; амилин &#8594;
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <ul>
-                                            <li class="chart_col">
-                                                <div class="flex flex_row el_10">
-                                                    <div class="flex flex_col align-right">
-                                                        <h5 class="chart-el_heading chart-el_heading_h5">
-                                                            10
-                                                        </h5>
-                                                        <h6 class="chart-el_details chart-el_details_h6">
-                                                            Желудок
-                                                        </h6>
-                                                    </div>
-                                                    <div class="img_circle img_circle_10"></div>
-                                                    <span class="chart-el_details">&#8594;</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="chart_col">
-                                        <div class="circle__chart circle__top_beta">
-                                            <span class="beta">&beta;</span>
-                                        </div>
-                                        <ul>
-                                            <li class="chart_col">
-                                                <span class="transparent">L</span>
-                                                <ul>
-                                                    <li class="chart_col">
-                                                        <div class="flex flex_row">
-                                                            <div class="flex flex_col">
-                                                                <h5
-                                                                    class="chart-el_heading chart-el_heading_h5 align-right ">
-                                                                    2
-                                                                </h5>
-                                                                <h6 class="chart-el_details chart-el_details_h6  el_2">
-                                                                    &#8595; инкретинового<br />
-                                                                    эффекта
-                                                                </h6>
-                                                            </div>
-                                                            <div class="flex flex_col el_3">
-                                                                <h5 class="chart-el_heading chart-el_heading_h5">
-                                                                    3
-                                                                </h5>
-                                                                <h6 class="chart-el_details chart-el_details_h6">
-                                                                    Дефект α-клеток
-                                                                </h6>
-                                                                <h6 class="chart-el_details chart-el_details_h6">
-                                                                    &#8595;
-                                                                </h6>
-                                                            </div>
-                                                        </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="chart_col">
+                                    <div class="circle__chart circle__top_beta">
+                                        <span class="beta">&beta;</span>
+                                    </div>
+                                    <ul>
+                                        <li class="chart_col">
+                                            <span class="transparent">L</span>
+                                            <ul>
+                                                <li class="chart_col">
+                                                    <div class="flex flex_row">
                                                         <div class="flex flex_col">
-                                                            <div class="flex flex_row">
-                                                                <span class="marger-sm"></span>
-                                                                <div class="flex flex_col">
-                                                                    <h6
-                                                                        class="chart-el_details chart-el_details_sm chart-el_details__left">
-                                                                        <span>&#8593; глюкагон</span>
-                                                                    </h6>
-                                                                </div>
-                                                            </div>
+                                                            <h5
+                                                                class="chart-el_heading chart-el_heading_h5 align-right ">
+                                                                2
+                                                            </h5>
+                                                            <h6 class="chart-el_details chart-el_details_h6  el_2">
+                                                                &#8595; инкретинового<br />
+                                                                эффекта
+                                                            </h6>
                                                         </div>
-                                                        <ul>
-                                                            <li class="chart_col">
-                                                                <h5 class="chart-el_heading chart-el_heading_h5">
-                                                                    &nbsp; &nbsp; Гипергликемия
-                                                                </h5>
-                                                                <span
-                                                                    class="chart-el_details chart-el-details-sm marger-vvbg">
-                                                                    &nbsp; &#8593; &#8595;</span>
-                                                                <ul>
-                                                                    <li class="chart_col">
-                                                                        <div class="flex flex_row el_11">
-                                                                            <span class="marger-sm"></span>
-                                                                            <div class="flex flex_col align-right">
-                                                                                <h5
-                                                                                    class="chart-el_heading chart-el_heading_h5">
-                                                                                    11
-                                                                                </h5>
-                                                                                <h6
-                                                                                    class="chart-el_details chart-el_details_h6">
-                                                                                    Почки
-                                                                                </h6>
-                                                                            </div>
-                                                                            <div class="img_circle img_circle_11"></div>
-                                                                        </div>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="chart_col">
-                                        <div class="flex flex_col">
-                                            <div class="flex flex_row el_7">
-                                                <div class="img_circle img_circle_7"></div>
-                                                <div class="flex flex_col">
-                                                    <h5 class="chart-el_heading chart-el_heading_h5">
-                                                        7
-                                                    </h5>
-                                                    <h6 class="chart-el_details chart-el_details_h6">
-                                                        &nbsp; Головной мозг
-                                                    </h6>
-                                                    <span class="chart-el_details chart-el-details-sm">
-                                                        &nbsp; &#8593; &#8595;</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <ul>
-                                            <li class="chart_col">
-                                                <div class="flex flex_col">
-                                                    <h6 class="chart-el_details chart-el_details_sm">
-                                                        <span
-                                                            class="marger-sm marger-sm__bt">Инсулинорезистентность</span>
-                                                    </h6>
-                                                </div>
-                                                <div class="flex flex_row el_6 marger-sm__bt">
-                                                    <div class="img_circle img_circle_6"></div>
-                                                    <div class="flex flex_col">
-                                                        <h5 class="chart-el_heading chart-el_heading_h5">
-                                                            6
-                                                        </h5>
-                                                        <h6 class="chart-el_details chart-el_details_h6">
-                                                            &nbsp; Печень
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                                <div class="flex flex_col">
-                                                    <div class="flex flex_row el_5 marger-sm__bt">
-                                                        <div class="img_circle img_circle_5"></div>
-                                                        <div class="flex flex_col">
+                                                        <div class="flex flex_col el_3">
                                                             <h5 class="chart-el_heading chart-el_heading_h5">
-                                                                5
+                                                                3
                                                             </h5>
                                                             <h6 class="chart-el_details chart-el_details_h6">
-                                                                &nbsp; Мышцы
+                                                                Дефект α-клеток
+                                                            </h6>
+                                                            <h6 class="chart-el_details chart-el_details_h6">
+                                                                &#8595;
                                                             </h6>
                                                         </div>
                                                     </div>
                                                     <div class="flex flex_col">
-                                                        <div class="flex flex_row el_4 marger-sm__bt">
-                                                            <div class="img_circle img_circle_4"></div>
+                                                        <div class="flex flex_row">
+                                                            <span class="marger-sm"></span>
                                                             <div class="flex flex_col">
-                                                                <h5 class="chart-el_heading chart-el_heading_h5">
-                                                                    4
-                                                                </h5>
-                                                                <h6 class="chart-el_details chart-el_details_h6">
-                                                                    &nbsp; Жировые клетки
+                                                                <h6
+                                                                    class="chart-el_details chart-el_details_sm chart-el_details__left">
+                                                                    <span>&#8593; глюкагон</span>
                                                                 </h6>
                                                             </div>
                                                         </div>
-                                                        <div></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="chart_col">
+                                                            <h5 class="chart-el_heading chart-el_heading_h5">
+                                                                &nbsp; &nbsp; Гипергликемия
+                                                            </h5>
+                                                            <span
+                                                                class="chart-el_details chart-el-details-sm marger-vvbg">
+                                                                &nbsp; &#8593; &#8595;</span>
+                                                            <ul>
+                                                                <li class="chart_col">
+                                                                    <div class="flex flex_row el_11">
+                                                                        <span class="marger-sm"></span>
+                                                                        <div class="flex flex_col align-right">
+                                                                            <h5
+                                                                                class="chart-el_heading chart-el_heading_h5">
+                                                                                11
+                                                                            </h5>
+                                                                            <h6
+                                                                                class="chart-el_details chart-el_details_h6">
+                                                                                Почки
+                                                                            </h6>
+                                                                        </div>
+                                                                        <div class="img_circle img_circle_11"></div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="chart_col">
+                                    <div class="flex flex_col">
+                                        <div class="flex flex_row el_7">
+                                            <div class="img_circle img_circle_7"></div>
+                                            <div class="flex flex_col">
+                                                <h5 class="chart-el_heading chart-el_heading_h5">
+                                                    7
+                                                </h5>
+                                                <h6 class="chart-el_details chart-el_details_h6">
+                                                    &nbsp; Головной мозг
+                                                </h6>
+                                                <span class="chart-el_details chart-el-details-sm">
+                                                    &nbsp; &#8593; &#8595;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li class="chart_col">
+                                            <div class="flex flex_col">
+                                                <h6 class="chart-el_details chart-el_details_sm">
+                                                    <span class="marger-sm marger-sm__bt">Инсулинорезистентность</span>
+                                                </h6>
+                                            </div>
+                                            <div class="flex flex_row el_6 marger-sm__bt">
+                                                <div class="img_circle img_circle_6"></div>
+                                                <div class="flex flex_col">
+                                                    <h5 class="chart-el_heading chart-el_heading_h5">
+                                                        6
+                                                    </h5>
+                                                    <h6 class="chart-el_details chart-el_details_h6">
+                                                        &nbsp; Печень
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex_col">
+                                                <div class="flex flex_row el_5 marger-sm__bt">
+                                                    <div class="img_circle img_circle_5"></div>
+                                                    <div class="flex flex_col">
+                                                        <h5 class="chart-el_heading chart-el_heading_h5">
+                                                            5
+                                                        </h5>
+                                                        <h6 class="chart-el_details chart-el_details_h6">
+                                                            &nbsp; Мышцы
+                                                        </h6>
                                                     </div>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                                                <div class="flex flex_col">
+                                                    <div class="flex flex_row el_4 marger-sm__bt">
+                                                        <div class="img_circle img_circle_4"></div>
+                                                        <div class="flex flex_col">
+                                                            <h5 class="chart-el_heading chart-el_heading_h5">
+                                                                4
+                                                            </h5>
+                                                            <h6 class="chart-el_details chart-el_details_h6">
+                                                                &nbsp; Жировые клетки
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </output>
+            </div>
             <input type="range" min="100" max="300" step="1" value="300" />
             <div class="input-labels flex flex_row">
                 <span>1998</span>
@@ -506,7 +502,7 @@
             </div>
         </section>
     </main>
-    <script type="module" src="main.30213c75a7cf34c5ee44.js"></script>
+    <script type="module" src="main.062d9aea5d70feca180f.js"></script>
 </body>
 
 </html>

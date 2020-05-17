@@ -1,0 +1,115 @@
+/*Секция #introduction (первый блок на странице)
+*/
+
+.heading__intro {
+    /* top нужен именно паддинг, потому что при margin секция будет начинаться с самого заголовка.
+    Если пользователь использует навигацию справа, он переместиться на заголовок, что не очень удобно, 
+    так как отрезается небольшая часть сверху страницы. 
+    Также затрудняется добавление классов кружкам (оранжевые, если секция просматривается пользователем)
+    */
+    padding-top: 120px;
+    margin-left: 100px;
+    width: 75%;
+}
+
+.pulse {
+    display: block;
+    border-radius: 50%;
+    background-color: #f78b1fb8;
+    border: 1px solid #cf1436ba;
+    cursor: pointer;
+    box-shadow: 0 0 0 #de791b;
+    animation: pulse 3s infinite;
+}
+
+/* если кликнуть по кругу, анимация прекращается */
+.pulse:hover {
+    animation: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #de791b3f;
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 10px #de791baf;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 #cf1436ba;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 #de791b3f;
+        box-shadow: 0 0 0 0 #de791b3f;
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 10px #de791baf;
+        box-shadow: 0 0 0 10px #de791baf;
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 #cf1436ba;
+        box-shadow: 0 0 0 0 #cf1436ba;
+    }
+}
+
+.pulse_risks {
+    width: 11px;
+    height: 11px;
+}
+
+.pulse_hypoc {
+    width: 15px;
+    height: 15px;
+}
+
+.pulse_goal {
+    width: 22px;
+    height: 22px;
+}
+
+/* Для первого пункта – цель */
+
+.box_goal {
+    width: 200px;
+    margin-left: 576px;
+    margin-top: 17px;
+}
+
+.point_goal {
+    margin-left: 15px;
+}
+
+/* Для пункта – Гипогликемия */
+
+.box_hypoc {
+    margin-left: 235px;
+    margin-top: 88px;
+}
+
+.point_hypoc {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Для пунктов – риски и осложнения */
+
+.box_risk {
+    margin-left: 795px;
+    margin-top: 25px;
+}
+
+.box_complications {
+    margin-left: 398px;
+    margin-top: -35px;
+}
+
+.point_risk {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

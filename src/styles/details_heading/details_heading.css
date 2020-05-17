@@ -1,0 +1,29 @@
+ /*Секция #details_heading (вступление последнего блока на странице)
+*/
+
+.heading__details {
+    text-align: center;
+    width: 500px;
+    margin-left: 25%;
+}
+
+.ices-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.ice-piece__row {
+    margin-top: 180px;
+    margin-left: 100px;
+}
+
+.ice-piece-md__row {
+    margin-top: 140px;
+    margin-left: 225px;
+}
+
+.ice-piece-sm__row {
+    margin-top: 250px;
+    margin-right: 225px;
+}

@@ -1,0 +1,88 @@
+/* 
+* Navbar и прочая навигация по странице
+*/
+
+.navbar {
+    position: fixed;
+    z-index: 10;
+    left: 10px;
+}
+
+.navbar_opened {
+    position: fixed;
+    z-index: 20;
+    top: 545px;
+    transition: opac;
+}
+
+.navbar__right {
+    position: fixed;
+    z-index: 10;
+    right: 15px;
+    top: 300px;
+}
+
+.circle {
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.742);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+}
+
+.circle_white {
+    background-color: rgb(255, 255, 255);
+}
+
+.circle_orange {
+    background-color: white;
+    height: 17px;
+    width: 17px;
+}
+
+.circle_active {
+    transition: 0.3s background-color;
+    background-color: #f78b1f;
+}
+
+/* кнопка открытия меню */
+.circle-sm {
+    height: 17px;
+    width: 17px;
+    position: fixed;
+    top: 720px;
+    left: 19px;
+}
+
+/* кнопки самого меню */
+.circle-bg {
+    height: 35px;
+    width: 35px;
+}
+
+/* овал для таймера в меню */
+.elipse {
+    border-radius: 40%;
+    width: 40px;
+    position: fixed;
+    top: 650px;
+    left: 42px;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.icon {
+    color: rgb(89, 86, 86);
+    font-size: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*эта иконка в ширину меньше остальных, добавляем ей ширины через паддинг*/
+.fa-times,
+.fa-grip-lines-vertical {
+    padding-left: 8px;
+}
+

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Gotham Pro Light';
+    src: url('./styles/fonts/GothamPro-Light.eot');
+    src: url('./styles/fonts/GothamPro-Light.eot') format('embedded-opentype'),
+        url('./styles/fonts/GothamPro-Light.woff') format('woff'),
+        url('./styles/fonts/GothamPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('./styles/introduction/introduction.css');
+@import url('./styles/details_heading/details_heading.css');
+@import url('./styles/details/details.css');
+@import url('./styles/navigation/navigation.css');
+
+
+  @keyframes navbar {
+      from {opacity: 0;}
+to {opacity: 1;}
+  }
+
+  @keyframes navbar_fade {
+    from {opacity: 1;}
+to {opacity: 0;}}
+
+/* 
+* Основные
+*/
+html {
+    scroll-behavior: smooth;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('./images/bgr.svg');
+    background-size: cover;
+    font-family: "Gotham Pro Light";
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_col {
+    flex-direction: column;
+}
+
+.flex_row {
+    flex-direction: row;
+}
+
+section {
+    height: 768px;
+    width: 100%;
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.heading {
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+
+.heading_sub {
+    font-size: 36px;
+    line-height: 60px;
+    letter-spacing: 1px;
+}
+
+.heading_blue {
+    color: #0d319c;
+}
+
+.heading_white {
+    color: white;
+}
+
+.point {
+    color: #0d319c;
+    font-family: Lato;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    font-size: 20px;
+}
+
+.marger-sm {
+    margin-left: 27px;
+    margin-right: 27px;
+}
+
+.marger-sm__right {
+    margin-right: 40px;
+}
+
+.marger-vsm__left {
+    margin-left: 10px;
+}
+
+.marger-sm__left {
+    margin-left: 18px;
+}
+
+.marger-sm__bt {
+    margin-bottom: 10px;
+}
+
+.marger-bg {
+    margin-left: 43px;
+    margin-right: 43px;
+}
+
+.marger-vbg {
+    margin-left: 83px;
+    margin-right: 83px;
+}
+
+.marger-vvbg {
+    margin-left: 103px;
+    margin-right: 103px;
+}
+.marger-wbg {
+    margin-left: 103px;
+}
+
+.marger-top {
+    margin-top: -17px;
+}
+
+.marger-bg__top {
+    margin-top: 40px;
+}
+
+.marger-sm__top {
+    margin-top: 1px;
+}
+
+.transparent {
+    color: transparent;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.spacer {
+    height: 30px;
+    padding-bottom: 10px;
+}
+

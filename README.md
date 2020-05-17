@@ -7,3 +7,5 @@ git clone https://github.com/thebettermay/test.git- скопировать ре�
 npm i - установить все плагины, использованные в проекте
 
 npm run dev - запуск на локальном сервере
+
+<https://thebettermay.github.io/test>
